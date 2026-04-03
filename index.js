@@ -826,7 +826,7 @@ app.get("/logs", (req, res) => {
             function scheduleRefresh() {
               clearTimeout(refreshTimer);
               if (!typing) {
-                refreshTimer = setTimeout(function() { location.reload(); }, 5000);
+                refreshTimer = setTimeout(function() { location.reload(); }, 500);
               }
             }
 
